@@ -1,0 +1,17 @@
+# Tell qt-graph that the knowledge base changed, so the new state is tested.
+name: qt
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md"]
+  pull_request:
+    paths-ignore: ["**.md"]
+
+jobs:
+  qt:
+    uses: shangzhihao/qt-graph/.github/workflows/qt-component-trigger.yml@main
+    with:
+      component: data
+    secrets:
+      QT_PAT: ${{ secrets.QT_PAT }}
