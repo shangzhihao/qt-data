@@ -1,0 +1,15 @@
+{
+  "description": "Knowledge quality per topic. 1.0 = complete; lower values make answers on that topic fail more often.",
+  "topics": {
+    "benefits": 1.0,
+    "deadlines": 1.0,
+    "documents": 1.0,
+    "eligibility": 1.0,
+    "fees": 1.0,
+    "forms": 1.0,
+    "housing": 1.0,
+    "income": 1.0,
+    "residence": 1.0,
+    "taxes": 1.0
+  }
+}
